@@ -78,6 +78,7 @@ public class PostagemController {
 
     }
     // METODO PARA DELETAR
+            @DeleteMapping
             public ResponseEntity<Object> deletePostagem(@PathVariable long id) {
 
                 return postagemRepository.findById(id)
