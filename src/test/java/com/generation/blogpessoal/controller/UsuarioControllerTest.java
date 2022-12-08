@@ -19,25 +19,28 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class UsuarioControllerTest {
-
 
     @Autowired
     private TestRestTemplate testRestTemplate;
 
     @Autowired
-    private UsuarioService  usuarioService;
+    private UsuarioService usuarioService;
 
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-
     @BeforeAll
     void start(){
+
         usuarioRepository.deleteAll();
-        usuarioService.cadastrarUsuario(new Usuario(0L, "Root", "root@root.com", "rootroot", " "));
+
+        usuarioService.cadastrarUsuario(new Usuario(0L,
+                "Root", "root@root.com", "rootroot", " "));
+
     }
 
     @Test
@@ -48,7 +51,7 @@ public class UsuarioControllerTest {
                 "Paulo Antunes", "paulo_antunes@email.com.br", "13465278", "https://i.imgur.com/JR7kUFU.jpg"));
 
         ResponseEntity<Usuario> corpoResposta = testRestTemplate
-                .exchange("/usuarios/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
+                .exchange("/usuario/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
 
         assertEquals(HttpStatus.CREATED, corpoResposta.getStatusCode());
         assertEquals(corpoRequisicao.getBody().getNome(), corpoResposta.getBody().getNome());
@@ -67,11 +70,10 @@ public class UsuarioControllerTest {
                 "Maria da Silva", "maria_silva@email.com.br", "13465278", "https://i.imgur.com/T12NIp9.jpg"));
 
         ResponseEntity<Usuario> corpoResposta = testRestTemplate
-                .exchange("/usuarios/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
+                .exchange("/usuario/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
 
         assertEquals(HttpStatus.BAD_REQUEST, corpoResposta.getStatusCode());
     }
-
 
     @Test
     @DisplayName("Atualizar um Usuário")
@@ -87,7 +89,7 @@ public class UsuarioControllerTest {
 
         ResponseEntity<Usuario> corpoResposta = testRestTemplate
                 .withBasicAuth("root@root.com", "rootroot")
-                .exchange("/usuarios/atualizar", HttpMethod.PUT, corpoRequisicao, Usuario.class);
+                .exchange("/usuario/atualizar", HttpMethod.PUT, corpoRequisicao, Usuario.class);
 
         assertEquals(HttpStatus.OK, corpoResposta.getStatusCode());
         assertEquals(corpoRequisicao.getBody().getNome(), corpoResposta.getBody().getNome());
@@ -95,15 +97,21 @@ public class UsuarioControllerTest {
     }
 
     @Test
-    @DisplayName("Listar todo os usuarios")
-    public void deveMostrarTodosUsuarios(){
-        usuarioService.cadastrarUsuario(new Usuario(0L,"Sabrina Sanches","sabrina_sanches@email.com.br", "sabrina123", " "));
-        usuarioService.cadastrarUsuario(new Usuario(0L,"Ricardo Marques", "ricardo_marques@email.com.br", "ricardo123", " "));
-        ResponseEntity<String> resposta = testRestTemplate.withBasicAuth("root@root.com", "rootroot").exchange("/usuarios/all", HttpMethod.GET, null, String.class);
+    @DisplayName("Listar todos os Usuários")
+    public void deveMostrarTodosUsuarios() {
+
+        usuarioService.cadastrarUsuario(new Usuario(0L,
+                "Sabrina Sanches", "sabrina_sanches@email.com.br", "sabrina123", "https://i.imgur.com/5M2p5Wb.jpg"));
+
+        usuarioService.cadastrarUsuario(new Usuario(0L,
+                "Ricardo Marques", "ricardo_marques@email.com.br", "ricardo123", "https://i.imgur.com/Sk5SjWE.jpg"));
+
+        ResponseEntity<String> resposta = testRestTemplate
+                .withBasicAuth("root@root.com", "rootroot")
+                .exchange("/usuario/all", HttpMethod.GET, null, String.class);
 
         assertEquals(HttpStatus.OK, resposta.getStatusCode());
+
     }
-
-
 
 }

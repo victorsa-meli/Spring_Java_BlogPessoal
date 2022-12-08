@@ -63,6 +63,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlogpessoalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Java_BlogPessoal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.generation.blogpessoal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.generation.blogpessoal" />
+      <option name="MAIN_CLASS_NAME" value="com.generation.blogpessoal.BlogpessoalApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsuarioControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Java_BlogPessoal" />
       <extension name="coverage">
@@ -94,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioControllerTest.deveMostrarTodosUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsuarioControllerTest.deveMostrarTodosUsuarios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Java_BlogPessoal" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +119,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.generation.blogpessoal.controller" />
       <option name="MAIN_CLASS_NAME" value="com.generation.blogpessoal.controller.UsuarioControllerTest" />
-      <option name="METHOD_NAME" value="deveMostrarTodosUsuario" />
+      <option name="METHOD_NAME" value="deveMostrarTodosUsuarios" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,9 +141,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UsuarioControllerTest" />
+        <item itemvalue="JUnit.UsuarioControllerTest.deveMostrarTodosUsuarios" />
+        <item itemvalue="JUnit.BlogpessoalApplicationTests" />
         <item itemvalue="Spring Boot.BlogpessoalApplication" />
         <item itemvalue="JUnit.UsuarioControllerTest.deveCriarUmUsuario" />
-        <item itemvalue="JUnit.UsuarioControllerTest.deveMostrarTodosUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +162,7 @@
       <workItem from="1670249049885" duration="1530000" />
       <workItem from="1670365827239" duration="1708000" />
       <workItem from="1670502851130" duration="9279000" />
-      <workItem from="1670516239740" duration="3347000" />
+      <workItem from="1670516239740" duration="3797000" />
     </task>
     <servers />
   </component>
