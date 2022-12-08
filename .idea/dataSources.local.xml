@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Spring_Java_BlogPessoal/Hibernate" uuid="2c246fdb-f969-4e21-92e1-a7e5346fdde5">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="CASSANDRA" exact-version="0" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

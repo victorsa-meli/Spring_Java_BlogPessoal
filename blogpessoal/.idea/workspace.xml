@@ -45,19 +45,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlogpessoalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="blogpessoal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.generation.blogpessoal.BlogpessoalApplication" />
@@ -75,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669981439029</updated>
       <workItem from="1669981440477" duration="2570000" />
-      <workItem from="1670029216049" duration="1656000" />
+      <workItem from="1670029216049" duration="2073000" />
+      <workItem from="1670245344371" duration="40000" />
     </task>
     <servers />
   </component>
