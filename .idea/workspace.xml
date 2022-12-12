@@ -59,17 +59,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogpessoalApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlogpessoalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Java_BlogPessoal" />
       <extension name="coverage">
@@ -173,6 +162,7 @@
       <workItem from="1670585522577" duration="1523000" />
       <workItem from="1670852143073" duration="286000" />
       <workItem from="1670852465434" duration="6815000" />
+      <workItem from="1670871496091" duration="12000" />
     </task>
     <servers />
   </component>
