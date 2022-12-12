@@ -20,6 +20,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2IMAoI81LulaikZdBPbDMgv5k4v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,7 +57,18 @@
       <recent name="com.generation.blogpessoal" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioControllerTest">
+  <component name="RunManager" selected="Spring Boot.BlogpessoalApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogpessoalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Java_BlogPessoal" />
       <extension name="coverage">
@@ -127,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BlogpessoalApplication" />
         <item itemvalue="JUnit.UsuarioControllerTest" />
         <item itemvalue="JUnit.UsuarioControllerTest.deveMostrarTodosUsuarios" />
         <item itemvalue="JUnit.BlogpessoalApplicationTests" />
-        <item itemvalue="Spring Boot.BlogpessoalApplication" />
         <item itemvalue="JUnit.UsuarioControllerTest.deveCriarUmUsuario" />
       </list>
     </recent_temporary>
@@ -152,6 +171,7 @@
       <workItem from="1670516239740" duration="5855000" />
       <workItem from="1670585522577" duration="1523000" />
       <workItem from="1670852143073" duration="286000" />
+      <workItem from="1670852465434" duration="6815000" />
     </task>
     <servers />
   </component>
