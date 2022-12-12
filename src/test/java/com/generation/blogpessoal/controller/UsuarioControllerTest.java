@@ -3,6 +3,7 @@ package com.generation.blogpessoal.controller;
 import com.generation.blogpessoal.model.Usuario;
 import com.generation.blogpessoal.repository.UsuarioRepository;
 import com.generation.blogpessoal.service.UsuarioService;
+import com.sun.xml.bind.v2.model.core.ID;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,9 +15,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
 import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -41,6 +40,18 @@ public class UsuarioControllerTest {
         usuarioService.cadastrarUsuario(new Usuario(0L,
                 "Root", "root@root.com", "rootroot", " "));
 
+    }
+
+
+    @Test
+    @DisplayName("Buscar Usuario por ID")
+    public void buscarUsuarioPorId(){
+        Optional<Usuario> novoUsuario = usuarioService.cadastrarUsuario( // Cria um novo usuario com ID generico
+                new Usuario(0L, "Antonio","antonio@gmail.com.br","123321123", ""));
+        ResponseEntity<Usuario> resposta = testRestTemplate.withBasicAuth("root", "root@root.com")
+                .exchange("/Usuario/"+ novoUsuario, HttpMethod.GET, null, Usuario.class); // busca pelo id da variavel novo usuario.
+
+                assertEquals(HttpStatus.OK, resposta.getStatusCode());
     }
 
     @Test

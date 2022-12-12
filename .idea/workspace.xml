@@ -50,19 +50,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UsuarioControllerTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlogpessoalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Java_BlogPessoal" />
       <extension name="coverage">
@@ -162,7 +149,9 @@
       <workItem from="1670249049885" duration="1530000" />
       <workItem from="1670365827239" duration="1708000" />
       <workItem from="1670502851130" duration="9279000" />
-      <workItem from="1670516239740" duration="3797000" />
+      <workItem from="1670516239740" duration="5855000" />
+      <workItem from="1670585522577" duration="1523000" />
+      <workItem from="1670852143073" duration="286000" />
     </task>
     <servers />
   </component>
